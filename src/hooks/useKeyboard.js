@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react"
 
+// Keys from the Keyboard
 const actionByKey = (key) => {
     const keyActionMap = {
         KeyW: 'moveForward',
@@ -15,6 +16,7 @@ const actionByKey = (key) => {
     }
     return keyActionMap[key];
 };
+
 export const useKeyboard = () => {
     const [actions, setActions] = useState({
         moveForward: false,
@@ -29,6 +31,7 @@ export const useKeyboard = () => {
         texture5: false,
     });
 
+    // Callbacks for Handling Keys
     const handleKeyDown = useCallback((e) => {
         const action = actionByKey(e.code)
         if(action){
