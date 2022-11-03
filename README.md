@@ -3,7 +3,7 @@
 ## 💻 Pré-requisitos
 -  Node JS 16.x
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando
 ```
 git clone https://github.com/deyvidsalvatore/minecraft_js.git
 cd minecraft_js
