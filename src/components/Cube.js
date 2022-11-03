@@ -16,6 +16,7 @@ export const Cube = ({position, texture}) => {
         <mesh 
         onClick={(e) => {
             e.stopPropagation();
+            //https://mammothmemory.net/images/user/base/Maths/Geometry/Internal%20Angles%20of%20Polygons/a-square-made-from-two-triangles.cd83ad7.jpg
             const clickedFace = Math.floor(e.faceIndex / 2);
             const {x, y, z} = ref.current.position;
 
